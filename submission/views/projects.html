@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Homepage</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../resources/css/style.css"> <!-- Optional CSS file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="../views/home.html">
+                <img src="../resources/img/Headshot2.JPG" alt="My Picture" class="profile-img" width="50" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../views/hobbies.html">Hobbies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../views/projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../views/resume.html">Resume</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="d-flex justify-content-center gap-3 mt-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://thebohemianrockstarpresents.wordpress.com/wp-content/uploads/2013/03/odyssey_game_shot_3.jpg"
+                    class="card-img-top" alt="The Odyssey Adventure">
+                <div class="card-body">
+                    <h5 class="card-title">The Odyssey (Text-Based Adventure Game)</h5>
+                    <p class="card-text">Utilizing classes and object-oriented programming principles, created a
+                        multiplayer
+                        text adventure game with elements including combat, treasures, and stats that vary throughout
+                        the
+                        game. <strong>C++</strong></p>
+                    <!-- <a href="#" class="btn btn-light">Github</a> -->
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANgAAADpCAMAAABx2AnXAAAAhFBMVEX///8AAAD+/v4EBAT5+fnCwsKwsLDn5+dgYGDx8fHNzc34+Pj19fXt7e0HBwfo6Oi6urrg4OCenp7a2tqqqqqSkpJTU1N8fHxzc3NsbGxGRkY6OjqEhIRBQUFnZ2fU1NRWVlaampoxMTGNjY0REREYGBh4eHgkJCRMTEwiIiIzMzMcHByO5lmcAAANoklEQVR4nO1dDXuqOgwOXfkG+VZQRJ2b82z////dJi2IOzvbncCQPbzbnKKtfU2bpklaAWbMmDFjxowZM2bMmDFjxowZM2Z8BAYcGOujIkb1UF28h/q6ApvTC9r1jE0K0R8tYFyxuheB9dQVlfThPkTG8Ifb3eHhr6c+pHsgxiBaa71hGaE2ugNeOB565KVplRxwY7Oiriia86A9LB4exC3dlTff/Kc9yH/9DNg+4Coy3bFQxO6EGhHrByg0gHuRGSdi8c7piF0mRIbE2H1oRSQmoHevyiDJw90oDykxvevYYIIYjTG4O2LdmoPE5Bi7A1bQMzGNxth9oF9iD7+V2K+V2ExseMzEvq5oVh4/gpnY1xXNxH4Es/L4rApp0KtlS+vymOiDmHKZhljRonaaMzaus6oXYiS0ZKUtREWhr7ywnI/qIuhOjMoFq8cn6RRavO1Dj5bR43bGzsSwzwVH5ctZSLfQi+P15jm/FV2JYfv1s0Z+nAV6J+lPKwMY2QvXXWJgPGoPLc+kuC9YVsGUJYbxDNCfpadU0855Wb0SN/G3tyc8xjAOlrxp6BzXlrrrMqEJ7exNI/W4HDdM1oUYdjbXEjQW2mMKTQXmaUH68TCqyDoREwXSp4WQ14tO4UwhMIwhuQdUkNpLMiazbmOMRRYWfgpBBWlxYhZ3ViSycsyprFtXBH2BWjDjSEelH2A95gYvn6OJEgPulVh4ndRRdWlcSbtRjD1jqsRYsMGy2XvziUF0RpEdOUqxv8Z+q22dJBah/vsTvi/LwDviLJ3744msm+Wxw7Kb3ftIjXiQ4jN7czzjo5vy0LHoOoJ3hZlaTp+j8eK2XYmh7jDfN79FrMemfg/diDlY9tV5b8nXXdEyx8tm6UYswrJvRqsryhQmkPPAyh4vvNlN3YuJWNi7x6uuSFNatMVaYzZRYtw7kYUhjELG6/oujp3nEMZblHU0qUIyCjPOeOsqg+AR69wHeHmCxHCG3lNEXa8Fgx4QYF5BV2ndMsWuiM1OyQpe6KA0I3oT/ZLkuPFhomMMO5pt0QL6Ofahtj+cgtaemhphIw2yrgtNSGRy2MMyDeiic3qUbo9qws4cWoU5MjlMYLO01m+a9Hho1oSdOTL/F/QNOe2v3W+FCeNmmnZ1v2GpXYVSeiBHMDo7HrSnLMAROFVida49BOmj7IFICx2Mugvk/Bikyf+zcR3db8qEMtMNUSNXqa70/GT9ilBHVXDyYu6RlIjjQh0JnKzE3lUUouJf/Mp8RZXs3LYcR0O/xBb3k8XdK7HFw13mBPfTFRncR3p6b8Skj1Qspz0YPRUCoB9iNKiSpdpxkdmNVT9xdU9TcSR5oaGY0WYrPvUYtBxS9lZai2gALzIuK576BC3a7z82G5JQ5Zfk6xh3oPWSSxWtabFCC06yF498bOO+F+UR7UUVi3q31gJldvDGnqh7IEZ6A4MTSOvPljg+HbyRM1i6eqkYeBvJ60AT9JP5IncBxmTyw2j0unmCUW+8SK/AkRkyrc88yz554MrLOEFiIO0NTaqLOnWWpmpBNhbzmTtBFzfZFqg3yNxwcT1G26wYJNK4EsxgPBVyMzFqMeoN1O/C2GisezG0zEfyfjyPqRu7EGv0xtHGaUutx3DkRX+kQy6doCdY6g3ilUlzkZKdFzI1QmgQqvYwmnPxNmKyH6qhJE3DS949VZOoyS11LwdI/ChuIiaDlpZapnCo09MvGwqEBllLOyT1JkQMi/lLmS974PUxHu0NBSjQFxLoW+y6Y8zSt44xvpFZpbj4gobYRWLicfJC42yRwhjRpBuJma+0TMHwOZC39F1XFFeU0Y/zGbCfl9ltY8wtlNlUu4KVum9JDPmKmZpsEKz8p12NtxBjsNvQ+Mougvh7jGF1uzXN3wW8z48bHjcQk4e2UDpfS9t9vM0KZ+oFEptCV8RGpoJCfOUA+IiY6I2CmaaZlDHcc8u/auUtXVE00kwjEHOvC58RQ2Z2fPTGyKi6kZg0Nhh83hWVa5GNYTHeOkGrWfkdsYcPiNWv7LPV/6eFN9qKvA6tw+cSg2bf3ATG2D8q+s2bT2diw2PeLvx1Rb9ZYr+WmIxBjxuNUOgloklOxktwfewIkmpUL4E/KTHcgzqij/QKfXVF1pw1cB+8+hxjOTkCjLH34jft6YEYFYwX5Lt5ikYOPiv0c+yFwG6rtkMX3l30xX6OvQDwVqQ6cCdqqtZf00+HQG6h2rAuqG3lntPp5yvS3ognnMSeX8nddnKZ9HFMnBhKZkkBsWNwJnebISubfFekbXCikq0P4Rs5HAMYwxtw3ao+xliyoSlMB+AnEl3l1Y6D0dAHMftESmOFsrOfZFiMjo6YLDEuC0mNuDHhEiXbJn19P8Ct6LahgBqf/EEhPevKHKYJTcu9Kc9jdMoFpwMiMLNUKgxzTRWmE86lkk2XGvEcQX3OlkEHOb0k05UY7ZCgiCzugqPUKYyDeVKXWNMdY1iAF8Qip5NXpOcXEjr2SBvz0IuOEhMyiYnXizKglDc7pItvCYxof9yaDgFSB+5oIzcdLdNUKO5WFMktPBp24+wHuTnaQn9eQRbU0b1oQJnb8ojXn2TG0Ti5OTdKTJWloxKuTreQ26sY7UzSNtF4htXNxGjKoqJPRmsoqcFm57QDsHBHS1i8VXkQgSXtd15xdgkx13sJMOMI09+6+ohuxo2BP/qJyaZ/NNu6r4nxyWmaFjCDNPzrJt4kMVQIO9omrCmN2NaKWJWX0wKmcNUCZgoJLLKYGEbollp92GJcwMgt0SnU8dqeWvz/W3iL8hDzU0pz1Tb6xyvqHYAbR466nx5qNyuPhJxtz+E/nkaFkpP+yG26MImsARwyeypWeh+3mLpesqXp2xjF/3GrVpQaEV2IH5ai3WM8fcb5gI4jnIjEYFcvVv5hMNHCDFT23x4mohUZcysSWPWVthMLGDRA0hEMq9vyFXVssPbiw+dagQtjEqOc+4moe0rExI5I/fCTUqI3WnIZOg11L9bKmYYa8auzSHABIxZsi2gixNBg0rPQlrrvM4kJkUVGiudxgdtHa7+BbxOTkXSuVi5fbMQkPoxef/cSq1/kyQdfSKx2Nk5lgp4AZmJTw0xsapiJTQ0zsalhJjY1zMSmhpnY1DATmxpmYveO943/FcQ+inqIKzWxwZjJPNohPzb2d96nuNAQG+qtpcdu6P7ArgHgUuak7IpsGAwfqv3bcSnHGObzuoN1xcFTc5oMqPa1RnkM97ZqDAz3DuCZZmC+R0QSMwIz+ODJnuANlgRH4R7nZH2AisbYufroub5wcgYiRiekJFvtYzyog/gHxDIaSnkwua+GDq28QsNtOGDugDNMHInGLn2R0eWbBH4Ui90wwXXSSn45CifidRzoGybkMUS+bqTGGEh1f7B0iHoT3lipx/ewu3HGjBkzZsyYMWPGjBkzZsyYMWPGjBkzZkwSzTlzDOqMjjpwW0dRL7etAxGgVeayh7v9mlZJdnn8+cayHnGJ36sIPq9zI7j8Nj61t6a+hXqf5eUW6qd4U4mKLTfZAfIx3ef1Q1lgIN89McHad4aUQP3p0vtzVp+C0DSO2al/ndFQi49xLrlCW7qXsH3zREtivL7ePzGupGCUoPqMHXuQmerTlE1imQ9MNcIvzKsEg6bf1gkAxrkygR9DMF436y2k68qH9FzY4l7hQXwuPDfbvMb8sBbX7HKwrAQUjO8zo/R85nrgeUkReZbjubbvMs/3XfGkv0+4eBEXr7SjPOI2CsfzRbsCUcj2Pc/36pwK/xykOT9t8PtNQF85FktLZxnEhV656UovvHjllT6AU8HhaOd/9KFCtQxcwyqC8LxaR/ERDnH5usoeq1DP84O/slb6Po8OL8UutqrYO1Sr8BTFmQssKKqjvSosfbfJV6uqEAK2d+LGTwQdTw/x9Biv3Ime4BSrFPylqFwv4gz0yhOFeFDoq5g7cThYbB3cLIsgzPnhYGRwONiFC2ffF61ZOysdsjLisHSTvR2c4r3tJnleYqm4ZHZogZPrS1ESzjshhEcfn/Gxe4Wx6Lb60Uv2cRUXIbDzzoqtOMEbfjxUYVRklXjdcMTEb2CUUVhCehTE4oMvRsLajwpD30WrBPyw3LGlp+fgHU85ng1T0ibfMhWtOkJU6BbEBliOGH4OjkPvmAp9Goqu6ImBBklqmUJi9hqS2DLxJhAvCvP4AI6FxAaKQYsfL7LLlIjpJzvPfPH25yQQwnLMUwKJfTjwdRSdzagIz5Gvn8zKwKZV7s7ZeuEJiYVETGoRZCyeFrdJHmB3DMHZ23EBnqiSxOk7UB7SnKVnQWwg5SF0HWdCcbl6BsaBFfsy5SvLNLZ6lG8yO0sgXFcBlFbknM866GdLPwZ27qxMnm1KV5SMkhyMEE6iK7r42aeb9evZrTZbix/xnL70IMSYbnOPpTFjrriByNqWnB+3lmnvt5t8IGatA7Gu///zKrtMRs1cxaCZpdtPysc0U3F2VbJV4XDag7H6CCKmviOnNf0q6+LqW0tac3PLGLk8bhsrwHk9EyibhvP6Let/Q9CixkBNivMmN5K2aEvTQ5pbLcOpIQmNWXRll2Eh3vqwJMGaWIv0cF+hzJR5d3k/3nyM8rzO2v7jl0RTyVN+ILw2UC51yC82VbkjLduLQy3Uph7Gv5lK/R/jnKKhTxGGNQAAAABJRU5ErkJggg=="
+                    class="card-img-top" alt="Hang-Man">
+                <div class="card-body">
+                    <h5 class="card-title">Hang-Man</h5>
+                    <p class="card-text">Utilizing concepts of inheritance and random selection I created
+                        a text hangman game that is played in the terminal and has a choice of 150
+                        words and can be played repetitively. <strong>C++</strong></p>
+                    <!-- <a href="#" class="btn btn-light">Github</a> -->
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://media.istockphoto.com/id/1186323725/photo/strategy-to-win-in-ice-hockey.jpg?s=612x612&w=0&k=20&c=YuAxDdRJuIAua9gQ-BAAMS1lY-jd94laIlKZn2gKYmE="
+                    class="card-img-top" alt="Hockey">
+                <div class="card-body">
+                    <h5 class="card-title">Website for a Non-Profit</h5>
+                    <p class="card-text">I used HTML, CSS and minimal JavaScript to create an interactive, organized
+                        website for
+                        a non-profit that helps children play hockey. <strong>HTML, CSS, JavaScript</strong></p>
+                    <!-- <a href="#" class="btn btn-light">Github</a> -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Connect with me:</p>
+        <a href="https://www.linkedin.com/in/neha-ramachandra-0126162aa/" target="_blank"><i
+                class="fab fa-linkedin"></i> LinkedIn</a>
+    </footer>
+</body>
+
+</html>
