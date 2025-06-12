@@ -171,3 +171,100 @@ footer {
 p {
     font-size: xx-small;
 }
+/* Base adjustments */
+body {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* Responsive container grid */
+.container {
+    display: grid;
+    grid-template-areas:
+        "download"
+        "header"
+        "menu"
+        "content"
+        "content2"
+        "content3"
+        "footer";
+    grid-template-columns: 1fr;
+}
+
+.container-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container-profile img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+}
+
+/* Navigation links stack on small screens */
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    float: none;
+}
+
+/* MEDIA QUERIES */
+
+/* Tablet and up */
+@media screen and (min-width: 768px) {
+    .container {
+        grid-template-areas:
+            "download header"
+            "menu content"
+            "menu content2"
+            "menu content3"
+            "footer footer";
+        grid-template-columns: 1fr 3fr;
+    }
+
+    ul {
+        flex-direction: row;
+    }
+
+    li {
+        float: left;
+    }
+
+    .container-profile {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .container-profile > div:first-child {
+        margin-right: 20px;
+    }
+
+    .d-flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        margin: 10px;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    body {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
